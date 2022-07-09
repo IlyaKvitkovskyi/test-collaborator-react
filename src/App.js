@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import DB from './assets/db.json';
+
+import TelegramNotifications from './components/TelegramNotifications';
+import GeneralNotifications from './components/GeneralNotifications';
+import SitesNotifications from './components/SitesNotifications';
+import Button from './components/Button';
 
 function App() {
+  const [data, setData] = React.useState(DB.data);
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <div className="main-title">
+        <div className="container">
+          <div className="main-title__head">
+            <h2>{data.title}</h2>
+            <p>{data.text}</p>
+          </div>
+        </div>
+      </div>
+
+      <section className="messages">
+        <div className="container">
+          <GeneralNotifications />
+
+          <SitesNotifications />
+
+          <TelegramNotifications />
+
+          <Button/>
+        </div>
+      </section>
     </div>
   );
 }
