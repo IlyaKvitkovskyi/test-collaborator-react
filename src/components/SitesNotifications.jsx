@@ -3,6 +3,7 @@ import classnames from 'classnames';
 import BasicSwitch from './Switch';
 import Options from './Options';
 import DB from '../assets/db.json';
+import closeSvg from '../assets/images/close.svg';
 
 export default function SitesNotifications() {
   const [data, setData] = React.useState(DB.data);
@@ -20,11 +21,10 @@ export default function SitesNotifications() {
   };
 
   function addItem(index, string) {
-
     let newArray = [];
 
     if (searchAgentItems.length) {
-      newArray = searchAgentItems.map((el) => el)
+      newArray = searchAgentItems.map((el) => el);
     } else {
       newArray.push([]);
     }
@@ -87,8 +87,12 @@ export default function SitesNotifications() {
                   {searchAgentItems &&
                     searchAgentItems.map((itemEl, idx) => (
                       <div key={idx} className="search-agent__item">
-                        <span>{itemEl.text}</span>
-                        <button className="search-agent__close">+</button>
+                        <span className="search-agent__var">
+                          {itemEl.text}
+                          <span className="search-agent__close">
+                            <img src={closeSvg} alt="close icon" />
+                          </span>
+                        </span>
                       </div>
                     ))}
                 </div>

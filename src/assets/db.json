@@ -35,7 +35,7 @@
         "label": "Бизнес",
         "items": [],
         "details": "Детали",
-        "detailsOptions": ["asdasd", "afdgsdgfsdfgsdfg", "a;lsdkasdk"],
+        "detailsOptions": ["Seo", "Продвижение", "Аналитика"],
         "activated": true,
         "text": "Поисковый агент присылает 1 письмо в неделю и только при условии, что найдены новые площадки"
       },
@@ -43,7 +43,7 @@
         "label": "123",
         "items": [],
         "details": "Детали",
-        "detailsOptions": ["asdasd", "afdgsdgfsdfgsdfg", "a;lsdkasdk"],
+        "detailsOptions": ["Seo", "Продвижение", "Аналитика"],
         "activated": true,
         "text": ""
       },
@@ -51,7 +51,7 @@
         "label": "SEO",
         "items": [],
         "details": "Детали",
-        "detailsOptions": ["asdasd", "afdgsdgfsdfgsdfg", "a;lsdkasdk"],
+        "detailsOptions": ["Seo", "Продвижение", "Аналитика"],
         "activated": true,
         "text": ""
       },
@@ -59,7 +59,7 @@
         "label": "Бурж ссылки",
         "items": [],
         "details": "Детали",
-        "detailsOptions": ["asdasd", "afdgsdgfsdfgsdfg", "a;lsdkasdk"],
+        "detailsOptions": ["Seo", "Продвижение", "Аналитика"],
         "activated": true,
         "text": ""
       }
